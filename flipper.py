@@ -11,7 +11,7 @@ import os
 import difflib
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("api.env")
 API_KEY = os.getenv("HYPIXEL_API_KEY")
 
 BG_MAIN = "#0b0f19"
@@ -27,7 +27,7 @@ WATCHLIST_FILE = "watchlist.txt"
 class MarketTerminal:
     def __init__(self, root):
         self.root = root
-        self.root.title("Market Flipper (EZ MONEY) - Public Edition")
+        self.root.title("Market Flipper (EZ MONEY)")
         self.root.geometry("1100x900")
         self.root.configure(bg=BG_MAIN)
         
